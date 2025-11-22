@@ -35,6 +35,6 @@ public class Customer extends Entity {
 
     
     public String toString() {
-        return "Customer{" +"id=" + id +", customerName='" + customerName + '\'' +", contactNumber='" + contactNumber + '\'' + ", address='" + address + '\'' + '}';
+        return "Customer {" +"id=" + id +", customerName='" + customerName + '\'' +", contactNumber='" + contactNumber + '\'' + ", address='" + address + '\'' + '}';
     }
 }

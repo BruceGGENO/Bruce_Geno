@@ -50,7 +50,7 @@ public class Main10 {
             System.out.println(record.toString() + " " + STUDENT_ID);
 
             // neat summary
-            System.out.println("---- SUMMARY ---- " + STUDENT_ID);
+            System.out.println(" SUMMARY " + STUDENT_ID);
             System.out.println("Order subtotal: " + order.computeSubtotal() + " " + STUDENT_ID);
             System.out.println("Invoice total: " + invoice.getTotalAmount() + " " + STUDENT_ID);
 

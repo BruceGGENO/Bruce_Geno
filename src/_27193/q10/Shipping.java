@@ -26,6 +26,6 @@ public class Shipping extends Entity {
 
     @Override
     public String toString() {
-        return "Shipping{" + "id=" + id +", shippingAddress='" + shippingAddress + '\'' +", shippingCost=" + shippingCost +'}';
+        return "Shipping {" + "id=" + id +", shippingAddress='" + shippingAddress + '\'' +", shippingCost=" + shippingCost +'}';
     }
 }
