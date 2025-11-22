@@ -15,9 +15,9 @@ public class Nurse extends Doctor {
         super(id, createdDate, updatedDate, hospitalName, address, phoneNumber, email, departments, departmentName,
                 departmentCode, doctorName, specialization, doctorEmail, phone);
         if (!(shift.equalsIgnoreCase("Day") || shift.equalsIgnoreCase("Night")))
-            System.out.println("Shift must be 'Day' or 'Night' 27197");
+            System.out.println("Shift must be 'Day' or 'Night' (27193)");
         if (yearsOfExperience < 0)
-            System.out.println("Years of experience must be >= 0 27197");
+            System.out.println("Years of experience must be >= 0 (27193)");
         this.nurseName = nurseName;
         this.shift = shift;
         this.yearsOfExperience = yearsOfExperience;

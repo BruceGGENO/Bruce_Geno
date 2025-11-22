@@ -19,7 +19,7 @@ public class Treatment extends Admission {
                 departmentCode, doctorName, specialization, doctorEmail, phone, nurseName, shift, yearsOfExperience,
                 patientName, age, gender, contactNumber, admissionDate, roomNumber, roomCharges);
        if (treatmentCost <= 0 || diagnosis.isEmpty() || treatmentGiven.isEmpty())
-            System.out.println("Invalid treatment details 27197");
+            System.out.println("Invalid treatment details (27193)");
         this.diagnosis = diagnosis;
         this.treatmentGiven = treatmentGiven;
         this.treatmentCost = treatmentCost;

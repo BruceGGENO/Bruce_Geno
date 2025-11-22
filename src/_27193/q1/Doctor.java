@@ -17,10 +17,10 @@ public class Doctor extends Department {
             String departmentCode, String doctorName, String specialization, String doctorEmail, String phone) {
         super(id, createdDate, updatedDate, hospitalName, address, phoneNumber, email, departments, departmentName,
                 departmentCode);
-            if (specialization.isEmpty()) System.out.println("Specialization cannot be empty 27193");
+            if (specialization.isEmpty()) System.out.println("Specialization cannot be empty (27193)");
         if (!Pattern.matches("^[\\w.-]+@[\\w.-]+\\.\\w+$", doctorEmail))
-            System.out.println("Invalid doctor email 27193");
-        if (!phone.matches("\\d{10}")) System.out.println("Phone must be 10 digits 27193");
+            System.out.println("Invalid doctor email (27193)");
+        if (!phone.matches("\\d{10}")) System.out.println("Phone must be 10 digits (27193)");
         this.doctorName = doctorName;
         this.specialization = specialization;
         this.doctorEmail = doctorEmail;

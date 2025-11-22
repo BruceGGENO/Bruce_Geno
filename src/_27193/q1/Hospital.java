@@ -20,9 +20,9 @@ public class Hospital extends Entity {
             String email, ArrayList<Department> departments) {
         super(id, createdDate, updatedDate);
         if (!phoneNumber.matches("\\d{10}"))
-            System.out.println("Phone must be 10 digits 27193");
+            System.out.println("Phone must be 10 digits (27193)");
         if (!Pattern.matches("^[\\w.-]+@[\\w.-]+\\.\\w+$", email))
-            System.out.println("Invalid email format 27193");
+            System.out.println("Invalid email format (27193)");
         this.hospitalName = hospitalName;
         this.address = address;
         this.phoneNumber = phoneNumber;

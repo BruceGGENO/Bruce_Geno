@@ -19,10 +19,10 @@ public class Patient extends Nurse {
             String contactNumber) {
         super(id, createdDate, updatedDate, hospitalName, address, phoneNumber, email, departments, departmentName,
                 departmentCode, doctorName, specialization, doctorEmail, phone, nurseName, shift, yearsOfExperience);
-        if (age <= 0) System.out.println("Age must be > 0 27197");
+        if (age <= 0) System.out.println("Age must be > 0 (27193)");
         if (!(gender.equalsIgnoreCase("Male") || gender.equalsIgnoreCase("Female") || gender.equalsIgnoreCase("Other")))
-            System.out.println("Gender must be Male/Female/Other 27197");
-        if (!contactNumber.matches("\\d{10}")) System.out.println("Contact must be 10 digits 27197");
+            System.out.println("Gender must be Male/Female/Other (27193)");
+        if (!contactNumber.matches("\\d{10}")) System.out.println("Contact must be 10 digits (27193)");
         this.patientName = patientName;
         this.age = age;
         this.gender = gender;

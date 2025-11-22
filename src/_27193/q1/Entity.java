@@ -10,8 +10,8 @@ public class Entity {
 
     
     public Entity(int id, LocalDate createdDate, LocalDate updatedDate) {
-        if (id <= 0) System.out.println("ID must be > 0 27193");
-        if (createdDate == null || updatedDate == null) System.out.println("Dates cannot be null 27193");
+        if (id <= 0) System.out.println("ID must be > 0 (27193)");
+        if (createdDate == null || updatedDate == null) System.out.println("Dates cannot be null (27193)");
         this.id = id;
         this.createdDate = createdDate;
         this.updatedDate = updatedDate;

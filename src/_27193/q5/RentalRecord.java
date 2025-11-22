@@ -9,7 +9,7 @@ public final class RentalRecord extends Invoice {
                         String customerName, String licenseNumber, String contactNumber,
                         java.time.LocalDate rentalDate, java.time.LocalDate returnDate, int rentalDays,
                         double rentalCharge, double penaltyCharge,
-                        String paymentMode, String transactionId) throws VehicleDataException {
+                        String paymentMode, String transactionId) throws VehDataException {
         super(id, createdDate, updatedDate, companyName, address, phoneNumber, branchName, locationCode,
                 vehicleType, registrationNumber, dailyRate, customerName, licenseNumber, contactNumber,
                 rentalDate, returnDate, rentalDays, rentalCharge, penaltyCharge, paymentMode, transactionId);

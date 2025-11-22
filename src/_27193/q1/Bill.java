@@ -37,11 +37,11 @@ public class Bill extends Treatment {
     }
 
     public void displayBill() {
-        System.out.println("Patient: " + getPatientName() + " 27193");
-        System.out.println("Room Charges: $" + getRoomCharges() + " 27193");
-        System.out.println("Treatment Cost: $" + getTreatmentCost() + " 27193");
-        System.out.println("Doctor Fee: $" + doctorFee + " 27193");
-        System.out.println("Medicine Cost: $" + medicineCost + " 27193");
-        System.out.println("Total Bill: $" + totalBill + " 27193");
+        System.out.println("Patient: " + getPatientName() + " (27193)");
+        System.out.println("Room Charges: $" + getRoomCharges() + " (27193)");
+        System.out.println("Treatment Cost: $" + getTreatmentCost() + " (27193)");
+        System.out.println("Doctor Fee: $" + doctorFee + " (27193)");
+        System.out.println("Medicine Cost: $" + medicineCost + " (27193)");
+        System.out.println("Total Bill: $" + totalBill + " (27193)");
     }
 }
