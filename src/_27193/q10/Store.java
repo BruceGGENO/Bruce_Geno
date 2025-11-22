@@ -43,11 +43,6 @@ public class Store extends Entity {
 
     @Override
     public String toString() {
-        return "Store{" +
-                "id=" + id +
-                ", storeName='" + storeName + '\'' +
-                ", address='" + address + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+        return "Store{" +"id=" + id +", storeName='" + storeName + '\'' +", address='" + address + '\'' +", email='" + email + '\'' +'}';
     }
 }

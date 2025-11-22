@@ -11,7 +11,7 @@ public class Bill extends Treatment {
     
 
     public Bill(int id, LocalDate createdDate, LocalDate updatedDate, String hospitalName, String address,
-            String phoneNumber, String email, String departmentName,
+            String phoneNumber, String email, ArrayList departments,String departmentName,
             String departmentCode, String doctorName, String specialization, String doctorEmail, String phone,
             String nurseName, String shift, int yearsOfExperience, String patientName, int age, String gender,
             String contactNumber, LocalDate admissionDate, int roomNumber, double roomCharges, String diagnosis,
@@ -21,7 +21,7 @@ public class Bill extends Treatment {
                 patientName, age, gender, contactNumber, admissionDate, roomNumber, roomCharges, diagnosis,
                 treatmentGiven, treatmentCost);
         if (doctorFee <= 0 || medicineCost <= 0)
-            System.out.println("Doctor fee and medicine cost must be > 0 ");
+            System.out.println("Doctor fee and medicine cost must be > 0 (27193)");
         this.doctorFee = doctorFee;
         this.medicineCost = medicineCost;
         this.totalBill = totalBill;

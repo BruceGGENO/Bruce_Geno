@@ -17,6 +17,6 @@ public class RealEstateRecord extends Commission {
 
     public void displayRecord() {
         System.out.println("Real Estate Records (27193)" );
-        System.out.println("Commission: RWF" + getCommissionAmount() + " 27193");
+        System.out.println("Commission: RWF" + getCommissionAmount() + " (27193)");
     }
 }

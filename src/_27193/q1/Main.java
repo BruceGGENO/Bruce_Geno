@@ -30,156 +30,157 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         try {
-            System.out.println("Enter Hospital Name:");
+            System.out.println("Input Hospital Name:");
             String hospitalName = sc.nextLine();
             if (hospitalName == null || hospitalName.trim().isEmpty()) {
-                throw new IllegalArgumentException("Hospital name cannot be empty");
+                throw new IllegalArgumentException("Hospital name cannot be empty (27193)");
             }
             
-            System.out.println("Enter Address:");
+            System.out.println("Input Address:");
             String address = sc.nextLine();
             if (address == null || address.trim().isEmpty()) {
-                throw new IllegalArgumentException("Address cannot be empty");
+                throw new IllegalArgumentException("Address cannot be empty (27193)" );
             }
             
             System.out.println("Enter Hospital Phone (10 digits):");
             String phone = sc.nextLine();
             if (!isValidPhone(phone)) {
-                throw new IllegalArgumentException("Hospital phone must be exactly 10 digits");
+                throw new IllegalArgumentException("Hospital phone must be exactly 10 digits (27193)");
             }
             
             System.out.println("Enter Hospital Email:");
             String email = sc.nextLine();
             if (!isValidEmail(email)) {
-                throw new IllegalArgumentException("Invalid hospital email format");
+                throw new IllegalArgumentException("Invalid hospital email format (27193)");
             }
 
             System.out.println("Enter Department Name:");
             String deptName = sc.nextLine();
             if (deptName == null || deptName.trim().isEmpty()) {
-                throw new IllegalArgumentException("Department name cannot be empty");
+                throw new IllegalArgumentException("Department name cannot be empty (27193)");
             }
             
             System.out.println("Enter Department Code:");
             String deptCode = sc.nextLine();
             if (deptCode == null || deptCode.trim().isEmpty()) {
-                throw new IllegalArgumentException("Department code cannot be empty");
+                throw new IllegalArgumentException("Department code cannot be empty (27193)");
             }
 
             System.out.println("Enter Doctor Name:");
             String docName = sc.nextLine();
             if (docName == null || docName.trim().isEmpty()) {
-                throw new IllegalArgumentException("Doctor name cannot be empty");
+                throw new IllegalArgumentException("Doctor name cannot be empty (27193)");
             }
             
             System.out.println("Enter Doctor Specialization:");
             String docSpec = sc.nextLine();
             if (docSpec == null || docSpec.trim().isEmpty()) {
-                throw new IllegalArgumentException("Doctor specialization cannot be empty");
+                throw new IllegalArgumentException("Doctor specialization cannot be empty (27193)");
             }
             
             System.out.println("Enter Doctor Email:");
             String docEmail = sc.nextLine();
             if (!isValidEmail(docEmail)) {
-                throw new IllegalArgumentException("Invalid doctor email format");
+                throw new IllegalArgumentException("Invalid doctor email format (27193)");
             }
             
             System.out.println("Enter Doctor Phone:");
             String docPhone = sc.nextLine();
             if (!isValidPhone(docPhone)) {
-                throw new IllegalArgumentException("Doctor phone must be exactly 10 digits");
+                throw new IllegalArgumentException("Doctor phone must be exactly 10 digits (27193)");
             }
 
             System.out.println("Enter Nurse Name:");
             String nurseName = sc.nextLine();
             if (nurseName == null || nurseName.trim().isEmpty()) {
-                throw new IllegalArgumentException("Nurse name cannot be empty");
+                throw new IllegalArgumentException("Nurse name cannot be empty (27193)");
             }
             
             System.out.println("Enter Nurse Shift (Day/Night):");
             String shift = sc.nextLine();
             if (!isValidShift(shift)) {
-                throw new IllegalArgumentException("Nurse shift must be 'Day' or 'Night'");
+                throw new IllegalArgumentException("Nurse shift must be 'Day' or 'Night' (27193)");
             }
             
             System.out.println("Enter Nurse Years of Experience:");
             int years = Integer.parseInt(sc.nextLine());
             if (years < 0) {
-                throw new IllegalArgumentException("Years of experience cannot be negative");
+                throw new IllegalArgumentException("Years of experience cannot be negative (27193)");
             }
 
             System.out.println("Enter Patient Name:");
             String patientName = sc.nextLine();
             if (patientName == null || patientName.trim().isEmpty()) {
-                throw new IllegalArgumentException("Patient name cannot be empty");
+                throw new IllegalArgumentException("Patient name cannot be empty (27193)");
             }
             
             System.out.println("Enter Age:");
             int age = Integer.parseInt(sc.nextLine());
             if (age <= 0 || age > 150) {
-                throw new IllegalArgumentException("Age must be between 1 and 150");
+                throw new IllegalArgumentException("Age must be between 1 and 120 (27193)");
             }
             
             System.out.println("Enter Gender (Male/Female/Other):");
             String gender = sc.nextLine();
             if (!isValidGender(gender)) {
-                throw new IllegalArgumentException("Gender must be 'Male', 'Female', or 'Other'");
+                throw new IllegalArgumentException("Gender must be 'Male', 'Female', or 'Other' (27193)");
             }
             
             System.out.println("Enter Patient Contact Number:");
             String contact = sc.nextLine();
             if (!isValidPhone(contact)) {
-                throw new IllegalArgumentException("Patient contact must be exactly 10 digits");
+                throw new IllegalArgumentException("Patient contact must be exactly 10 digits (27193)");
             }
 
             System.out.println("Enter Admission Date (YYYY-MM-DD):");
             LocalDate admissionDate = LocalDate.parse(sc.nextLine());
             if (admissionDate.isAfter(LocalDate.now())) {
-                throw new IllegalArgumentException("Admission date cannot be in the future");
+                throw new IllegalArgumentException("Admission date cannot be in the future (27193)");
             }
             
             System.out.println("Enter Room Number:");
             int roomNum = Integer.parseInt(sc.nextLine());
             if (roomNum <= 0) {
-                throw new IllegalArgumentException("Room number must be positive");
+                throw new IllegalArgumentException("Room number must be positive (27193)");
             }
             
             System.out.println("Enter Room Charges:");
             double roomCharges = Double.parseDouble(sc.nextLine());
             if (roomCharges < 0) {
-                throw new IllegalArgumentException("Room charges cannot be negative");
+                throw new IllegalArgumentException("Room charges cannot be negative (27193)");
             }
 
             System.out.println("Enter Diagnosis:");
             String diagnosis = sc.nextLine();
             if (diagnosis == null || diagnosis.trim().isEmpty()) {
-                throw new IllegalArgumentException("Diagnosis cannot be empty");
+                throw new IllegalArgumentException("Diagnosis cannot be empty (27193)");
             }
             
             System.out.println("Enter Treatment Given:");
             String treatment = sc.nextLine();
             if (treatment == null || treatment.trim().isEmpty()) {
-                throw new IllegalArgumentException("Treatment cannot be empty");
+                throw new IllegalArgumentException("Treatment cannot be empty (27193)");
             }
             
             System.out.println("Enter Treatment Cost:");
             double treatmentCost = Double.parseDouble(sc.nextLine());
             if (treatmentCost < 0) {
-                throw new IllegalArgumentException("Treatment cost cannot be negative");
+                throw new IllegalArgumentException("Treatment cost cannot be negative (27193)");
             }
 
             System.out.println("Enter Doctor Fee:");
             double doctorFee = Double.parseDouble(sc.nextLine());
             if (doctorFee < 0) {
-                throw new IllegalArgumentException("Doctor fee cannot be negative");
+                throw new IllegalArgumentException("Doctor fee cannot be negative (27193)");
             }
             
             System.out.println("Enter Medicine Cost:");
             double medicineCost = Double.parseDouble(sc.nextLine());
             if (medicineCost < 0) {
-                throw new IllegalArgumentException("Medicine cost cannot be negative");
+                throw new IllegalArgumentException("Medicine cost cannot be negative (27193)");
             }
 
+            
             HospitalRecord record = new HospitalRecord(1, LocalDate.now(), LocalDate.now(),
                     hospitalName, address, phone, email,
                     deptName, deptCode,
@@ -188,12 +189,14 @@ public class Main {
                     patientName, age, gender, contact,
                     admissionDate, roomNum, roomCharges,
                     diagnosis, treatment, treatmentCost,
-                    doctorFee, medicineCost);
+                    doctorFee, medicineCost, totalBill);
+
+        
 
             record.displayFullRecord();
 
         } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage() + " 27193");
+            System.out.println("Error: " + e.getMessage() + " (27193)");
         }
 
         sc.close();

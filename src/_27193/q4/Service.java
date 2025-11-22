@@ -11,8 +11,8 @@ public class Service extends Booking {
                    String serviceName, double serviceCost) {
         super(id, hotelName, address, phoneNumber, email, roomNumber, roomType, pricePerNight,
                 customerName, customerEmail, contactNumber, bookingDate, checkInDate, checkOutDate);
-        if (serviceName.isEmpty()) throw new IllegalArgumentException("Service name cannot be empty");
-        if (serviceCost <= 0) throw new IllegalArgumentException("Service cost must be > 0");
+        if (serviceName.isEmpty()) throw new IllegalArgumentException("Service name cannot be empty (27193)");
+        if (serviceCost <= 0) throw new IllegalArgumentException("Service cost must be > 0 (27193)");
         this.serviceName = serviceName;
         this.serviceCost = serviceCost;
     }
